@@ -5,12 +5,12 @@ fn main(){
 	let mut s = String::new();
 	f.read_to_string(&mut s);
 	let mut output = 0;
-  for ch in s.chars(){
-    match ch{
-      '(' => output += 1,
-      ')' => output -= 1,
-      _ => output += 0
-      }
-  }
+	for ch in s.chars(){
+	match ch{
+		'(' => output += 1,
+		')' => output -= 1,
+		_ => output += 0
+		}
+}
   println!("{}",output);
 }
